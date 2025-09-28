@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Digital Resume - Angloma Johanna</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="flip-container" id="flipContainer">
+
+        <div class="flipper">
+            <div class="front">
+                <section class="page_acceuil">
+                    <h1 class="titre_page_acceuil">Angloma Johanna</h1>
+                    <p class="soustitre_page_accueil">Ingénieure Cybersécurité en Alternance</p>
+                    <button class="btn" onclick="flipCard()">Découvrir mon profil</button>
+                    <img src="images/harleyq.png" alt="Photo de harley" class="harleyp">
+                </section>
+            </div>
+            <div class="back">
+                <section class="page_acceuil">
+                    <h1 class="titre_page_acceuil">Angloma Johanna</h1>
+                    <p class="soustitre_page_accueil">Ingénieure Cybersécurité en Alternance</p>
+                    <img src="images/harleyq.png" alt="Photo de harley" class="harley">
+                </section>
+
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="#bio">Bio</a></li>
+                            <li><a href="#info">Informations</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#formation">Formations</a></li>
+                            <li><a href="#experiences">Expériences</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <main>
+
+                    <section id="bio" class="autoShow imageReveal">
+                        <h2>Bio</h2>
+                        <img src="images/moi.jpg" alt="Photo de profil">
+                        <p>
+                            Je suis une jeune femme déterminée et ambitieuse, actuellement en 3ᵉ année à EPITECH.
+                            Mon objectif : devenir ingénieure en cybersécurité. Mon parcours témoigne de ma
+                            persévérance,
+                            de ma rigueur et de mon engagement. Je suis studieuse, motivée et prête à relever tous les
+                            défis
+                            pour atteindre l'excellence.
+                        </p>
+                    </section>
+
+                    <section id="info" class="autoShow imageReveal">
+                        <h2><i class="fa-solid fa-circle-info"></i> Informations pratiques</h2>
+                        <ul>
+                            <li>
+                                <h5><i class="fas fa-calendar-alt"></i> <strong>Rythme :</strong></h5>
+                                <p>4 semaines en entreprise / 2 semaines à l'école</p>
+                            </li>
+                            <li>
+                                <h5><i class="fas fa-clock"></i> <strong>Disponibilité :</strong></h5>
+                                <p>Janvier 2026</p>
+                            </li>
+                            <li>
+                                <h5><i class="fas fa-hourglass-half"></i> <strong>Durée :</strong></h5>
+                                <p>2 ans et demi</p>
+                            </li>
+                            <li>
+                                <h5><i class="fas fa-map-marker-alt"></i> <strong>Mobilité :</strong></h5>
+                                <p>Île-de-France</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="competences imageReveal" id="skills-contenu">
+                        <h2>Compétences</h2>
+                        <div class="skills-rub">
+                            <button class="rub-btn active" data-tab="skills"><i class="fas fa-laptop-code"></i> Langages
+                                de
+                                Programmation</button>
+                            <button class="rub-btn" data-tab="outils"><i class="fas fa-tools"></i> Outils &
+                                Environnements</button>
+                            <button class="rub-btn" data-tab="langues"><i class="fa-solid fa-language"></i>
+                                Langues</button>
+                            <button class="rub-btn" data-tab="soft-skills"><i class="fa-solid fa-hands"></i> Soft
+                                Skills</button>
+                        </div>
+
+                        <div class="contenu active" id="skills">
+                            <div class="skill"><span><i class="fab fa-html5"></i> HTML</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill"><span><i class="fab fa-css3-alt"></i> CSS</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill"><span><i class="fab fa-js-square"></i> JavaScript</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill"><span><i class="fas fa-code"></i> C/C++</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill"><span><i class="fab fa-python"></i> Python</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contenu" id="langues">
+                            <div class="lang-grid">
+                                <div class="lang-card">
+                                    <img src="images/france.jpg" alt="Drapeau France">
+                                    <p>Français<br><small>Langue maternelle</small></p>
+                                </div>
+                                <div class="lang-card">
+                                    <img src="images/anglais.jpg" alt="Drapeau Royaume-Uni">
+                                    <p>Anglais<br><small>Niveau B1</small></p>
+                                </div>
+                                <div class="lang-card">
+                                    <img src="images/guadeloupe.jpg" alt="Drapeau Guadeloupe">
+                                    <p>Créole<br><small>Niveau C1</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contenu" id="outils">
+                            <div class="skill-item">Pack Office</div>
+                            <div class="skill-item">Windows</div>
+                            <div class="skill-item">Linux</div>
+                            <div class="skill-item">Cisco</div>
+                            <div class="skill-item">Git / GitHub</div>
+                        </div>
+
+                        <div class="contenu" id="soft-skills">
+                            <div class="skill-item">Leadership</div>
+                            <div class="skill-item">Gestion d'équipe</div>
+                            <div class="skill-item">Support technique</div>
+                            <div class="skill-item">Gestion de projets</div>
+                            <div class="skill-item">Gestion du stress</div>
+                            <div class="skill-item">Travail d'équipe</div>
+                            <div class="skill-item">Fiabilité</div>
+                        </div>
+                    </section>
+
+                    <section id="formation" class="autoShow imageReveal">
+                        <h2>Formations</h2>
+                        <div class="mes_formations">
+                            <h3>Pré-MSc (Prépa Mastère Cybersécurité)</h3>
+                            <p>EPITECH - Septembre 2025</p>
+                        </div>
+                        <div class="mes_formations">
+                            <h3>Bachelor Sécurité Informatique</h3>
+                            <p>ESGI Paris - (Janvier - Mars 2025)</p>
+                        </div>
+                        <div class="mes_formations">
+                            <h3>Licence en Sciences pour l'Ingénieur (Bac +3)</h3>
+                            <p>Université d'Évry | Paris-Saclay - (2018 - 2022)</p>
+                        </div>
+                        <div class="mes_formations">
+                            <h3>Bac Scientifique (Spécialité Mathématiques)</h3>
+                            <p>Lycée Albert Einstein | Sainte-Geneviève-des-Bois - (Juin 2018)</p>
+                        </div>
+                    </section>
+
+                    <section id="experiences" class="autoShow imageReveal swiper">
+                        <h2>Expériences</h2>
+                        <div class="swap">
+                            <div class="page active">
+                                <h3>Technicienne Assistance Monétique Bancaire| 2023-2024</h3>
+                                <p>- Installation, paramétrage et maintenance des terminaux de paiement électronique
+                                    (TPE).</p>
+                                <p>- Assistance technique aux utilisateurs et résolution des incidents liés aux
+                                    équipements et aux réseaux (GPRS, IP, RTC).</p>
+                                <p>- Déploiement de solutions monétiques et mise à jour des logiciels embarqués.</p>
+                                <p>- Formation des utilisateurs à l’utilisation des TPE et suivi des incidents
+                                    techniques.</p>
+                            </div>
+                            <div class="page">
+                                <h3>Assistante Numérique pour l'Emploi | oct 2022- mai 2023</h3>
+                                <p>- Accompagnement des demandeurs d’emploi dans l’utilisation des outils numériques et
+                                    la rédaction de CV et lettres de motivation.</p>
+                                <p>- Formation aux outils bureautiques et plateformes en ligne.</p>
+                                <p>- Sensibilisation aux bonnes pratiques de sécurité numérique et support technique.
+                                </p>
+                            </div>
+                            <div class="page">
+                                <h3>Technicienne Pédagogique Numérique | 2020-2021</h3>
+                                <p>- Support technique pour les outils pédagogiques numériques (plateformes
+                                    d'apprentissage, logiciels éducatifs).</p>
+                                <p>- Formation et accompagnement des utilisateurs (enseignants et étudiants) aux outils
+                                    numériques.</p>
+                                <p>- Maintenance et mise à jour des environnements numériques d'apprentissage.</p>
+                            </div>
+                            <div class="page">
+                                <h3>Responsable de la Gestion Restauration | 2020-2022</h3>
+                                <p>- Encadrer les équipes de cuisine et de service, gérer les stocks et les
+                                    approvisionnements.</p>
+                                <p>- Gérer le budget, optimiser les coûts et veiller au respect des normes d'hygiène.
+                                </p>
+                                <p>- Assurer la satisfaction client et coordonner avec les autres services.</p>
+                            </div>
+
+                            <div class="swap-fleches">
+                                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projets" class="autoShow imageReveal">
+                        <h2>Projets</h2>
+                        <div class="projets-grid">
+                            <div class="projet-card">
+                                <h3>CV Digital interactif</h3>
+                                <p>Développement d'un CV numérique moderne et interactif avec animations CSS et
+                                    JavaScript.</p>
+                                <div class="projet-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                            </div>
+
+                            <div class="projet-card">
+                                <h3>Jeu du pendu en Python</h3>
+                                <p>Création d'un jeu interactif du pendu avec pygame.</p>
+                                <div class="projet-tech">
+                                    <span>Python</span>
+                                </div>
+                            </div>
+
+                            <div class="projet-card">
+                                <h3>Portfolio</h3>
+                                <p>Portfolio interactif en HTML/CSS/JS</p>
+                                <div class="projet-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="contact autoShow imageReveal" id="contact">
+                        <h2><i class="fas fa-envelope"></i> Me contacter</h2>
+                        <form action="mailto:johanna_angloma@outlook.fr" method="post" enctype="text/plain">
+                            <div class="nom_prenom">
+                                <div>
+                                    <label for="lastname"><i class="fas fa-user"></i> Nom</label>
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </div>
+                                <div>
+                                    <label for="firstname"><i class="fas fa-user"></i> Prénom</label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div>
+                                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                                <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn">Envoyer le message</button>
+                        </form>
+
+                        <div class="reseaux">
+                            <a href="https://www.linkedin.com/in/johanna-angloma-02132b289/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/johannacode" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="tel:+33634051908"><i class="fa-solid fa-phone"></i> 06 34 05 19 08</a>
+                        </div>
+                    </section>
+                </main>
+
+                <aside class="quote">
+                    <p>« Apprendre en faisant, grandir en avançant »</p>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+    <script>
+        function flipCard() {
+            document.getElementById('flipContainer').classList.add('flipped');
+        }
+
+
+        const tabs = document.querySelectorAll('.rub-btn');
+        const contents = document.querySelectorAll('.contenu');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                const target = tab.getAttribute('data-tab');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+
+        const experiences = document.querySelectorAll('.page');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentIndex = 0;
+
+        function showExperience(newIndex, direction) {
+            if (newIndex === currentIndex) return;
+
+            const current = experiences[currentIndex];
+            const next = experiences[newIndex];
+
+
+            experiences.forEach(exp => exp.classList.remove(
+                'active', 'slide-in-right', 'slide-in-left', 'slide-out-right', 'slide-out-left'
+            ));
+
+            if (direction === 'right') {
+                current.classList.add('slide-out-left');
+                next.classList.add('slide-in-right');
+            } else {
+                current.classList.add('slide-out-right');
+                next.classList.add('slide-in-left');
+            }
+
+
+            currentIndex = newIndex;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex - 1 + experiences.length) % experiences.length;
+            showExperience(newIndex, 'left');
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex + 1) % experiences.length;
+            showExperience(newIndex, 'right');
+        });
+
+        experiences[currentIndex].classList.add('active', 'slide-in-left');
+
+        const revealSections = document.querySelectorAll('.autoShow, .imageReveal');
+
+        function revealOnScroll() {
+            const triggerBottom = window.innerHeight * 0.9;
+            revealSections.forEach(sec => {
+                if (sec.getBoundingClientRect().top < triggerBottom && !sec.classList.contains('active')) {
+                    sec.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+    </script>
+</body>
+
+</html>
